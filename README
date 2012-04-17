@@ -1,1 +1,2 @@
-Run script/mighty_social_server.pl to test the application.
+1. `carton install`
+2. `carton exec -Ilib -- starman -p 8080 mighty_social.psgi`
