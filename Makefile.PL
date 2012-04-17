@@ -9,15 +9,19 @@ use Module::Install::Catalyst; # Complain loudly if you don't have
 name 'Mighty-Social';
 all_from 'lib/Mighty/Social.pm';
 
+requires 'Catalyst::Action::RenderView';
+requires 'Catalyst::Model::DBIC::Schema';
 requires 'Catalyst::Runtime' => '5.90011';
 requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';
-requires 'Catalyst::Action::RenderView';
 requires 'Catalyst::View::TT';
+
+requires 'DBD::Pg';
+requires 'DBIx::Class' => '0.08196';
 
 requires 'Template';
 
-requires 'Moose';
+requires 'Moose' => '2.0403';
 requires 'namespace::autoclean';
 
 requires 'Config::General'; # This should reflect the config file format you've chosen
