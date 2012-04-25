@@ -25,7 +25,7 @@ __PACKAGE__->set_primary_key('id');
 
 __PACKAGE__->belongs_to(
     'account' => 'Mighty::Social::Schema::Result::Account',
-    { 'foreign.id' => 'self.artist_id' },
+    { 'foreign.id' => 'self.account_id' },
 );
 
 1;
