@@ -28,4 +28,9 @@ __PACKAGE__->belongs_to(
     { 'foreign.id' => 'self.account_id' },
 );
 
+__PACKAGE__->has_many(
+    'urls' => 'Mighty::Social::Schem::Result::Url',
+    { 'foreign.account_id' => 'self.id' }
+);
+
 1;
