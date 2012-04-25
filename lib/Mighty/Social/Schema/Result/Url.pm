@@ -6,7 +6,7 @@ use warnings;
 use parent 'DBIx::Class::Core';
 
 __PACKAGE__->table('url');
-__PACAKGE__->add_columns(
+__PACKAGE__->add_columns(
     id => {
         data_type => 'integer',
     }.
