@@ -18,14 +18,15 @@ requires 'Catalyst::View::TT';
 
 requires 'DBD::Pg';
 requires 'DBIx::Class' => '0.08196';
+requires 'DBIx::Class::Migration' => '0.022';
 
 requires 'Template';
 
 requires 'Moose' => '2.0403';
 requires 'namespace::autoclean';
 
-requires 'Config::General'; # This should reflect the config file format you've chosen
-                 # See Catalyst::Plugin::ConfigLoader for supported formats
+requires 'Config::General';
+requires 'FindBin::libs';
 
 requires 'Plack' => '0.9986';
 requires 'Starman' => '0.3000';
