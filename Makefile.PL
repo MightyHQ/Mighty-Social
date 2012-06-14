@@ -19,6 +19,7 @@ requires 'Catalyst::View::TT';
 requires 'DBD::Pg';
 requires 'DBIx::Class' => '0.08196';
 requires 'DBIx::Class::Migration' => '0.022';
+requires 'Test::postgresql';
 
 requires 'Template';
 
